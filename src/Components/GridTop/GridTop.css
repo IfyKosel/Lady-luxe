@@ -1,0 +1,22 @@
+/* GRIDTOP COMPONENT */
+.grid-container {
+  position: relative;
+}
+
+.grid-container div {
+  row-gap: 20px;
+}
+.grid-image {
+  position: relative;
+}
+.save-text {
+  position: absolute;
+  top: 37.5%;
+  display: flex;
+  right: 10%;
+  text-align: right;
+  color: white;
+}
+.save-text h5 {
+  color: #deb887;
+}

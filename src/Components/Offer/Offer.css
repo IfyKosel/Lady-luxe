@@ -1,0 +1,47 @@
+/*  OFFER COMPONENT */
+.offer {
+  background-image: url(../../Images/offer_img.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+}
+.offer-text {
+  padding: 190px 0px;
+}
+.offer-text h1 {
+  color: #deb887;
+  font-size: 6.3rem;
+}
+.offer-text h2 {
+  color: white;
+  font-size: 3.6rem;
+  letter-spacing: 1px;
+}
+.offer-text h4 {
+  color: rgb(155, 155, 156);
+  letter-spacing: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer-text h1 {
+    font-size: 5.7rem;
+  }
+  .offer-text h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .offer-text h1 {
+    font-size: 4.5rem;
+  }
+  .offer-text h2 {
+    font-size: 2.5rem;
+  }
+  .offer-text h4 {
+    letter-spacing: 8px;
+    font-size: 20px;
+  }
+}

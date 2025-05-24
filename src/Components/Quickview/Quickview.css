@@ -1,0 +1,59 @@
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.custom-modal-wrapper {
+  background: white;
+  padding: 12px 0px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 500px;
+  max-height: 80%;
+  border-radius: 10px;
+  overflow-y: auto;
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.custom-modal-wrapper .close-btn {
+  cursor: pointer;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  line-height: 20px;
+  color: black;
+}
+.custom-modal-wrapper .img-modal {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  border: none;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-modal-wrapper .custom-modal {
+    height: 80%;
+    overflow-y: auto;
+  }
+}

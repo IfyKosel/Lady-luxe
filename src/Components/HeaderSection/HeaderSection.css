@@ -1,0 +1,243 @@
+.second_div {
+  max-width: 1140px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+.upper-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 2;
+  padding-block: 20px;
+}
+.upper-items,
+.lower-list li {
+  cursor: pointer;
+}
+.img-lady {
+  width: 350px;
+  height: 70px;
+}
+.faGear,
+.faBasket {
+  position: relative;
+}
+.cart-link {
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+.cart-link:hover {
+  color: black;
+}
+.faGear:hover .gear-list,
+.faBasket:hover .gear-list {
+  margin-top: 39px;
+  z-index: 5;
+  opacity: 1;
+}
+.nav-cart-count {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #deb887;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 10px;
+  top: -12px;
+  right: -6px;
+  z-index: 1;
+  /* margin: -33px 0px 0px 103px; */
+}
+.gear-list {
+  background-color: white;
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  right: 0;
+  left: unset;
+  margin-top: 70px;
+  transition: all 0.6s ease;
+  z-index: -5;
+  min-width: 270px;
+  max-height: 250px;
+  overflow-y: auto;
+  opacity: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gear-list a,
+.gear-list a:hover {
+  text-decoration: none;
+  color: black;
+}
+.lower-section {
+  background-color: white;
+}
+.lower-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+}
+.head-list {
+  padding-block: 40px;
+}
+.head-list:hover .span-head {
+  color: red;
+  transition: all 0.4s ease;
+}
+.head-list:hover .lower-hover-list,
+.head-list:hover .mega-container,
+.head-list:hover .feature-dropdown {
+  display: block;
+  z-index: 5;
+  /* opacity: 1;
+	  z-index: 5; */
+}
+.faAngleDown {
+  padding: 0px 25px 0px 10px;
+}
+.lower-hover-list {
+  font-size: 14px;
+  list-style-type: none;
+  background-color: white;
+  position: absolute;
+  padding: 14px 0px 14px 25px;
+  margin-top: 35px;
+  display: none;
+  /* opacity: 0;
+	  z-index: 0; */
+}
+.lower-hover-list li {
+  transition: all 0.6s ease;
+  width: 120px;
+}
+.feature-dropdown {
+  position: absolute;
+  /* margin: 40px -51.65% 0px; */
+  margin-top: 40px;
+  left: 0;
+  padding: 14px 40px 14px 25px;
+  background-color: white;
+  font-size: 14px;
+  cursor: auto;
+  /* opacity: 0;
+	  z-index: 0; */
+}
+.feature-dropdown ul {
+  list-style-type: none;
+  width: max-content;
+}
+.feature-dropdown h6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.feature-dropdown ul li {
+  width: 180px;
+}
+.header-droplist:hover .hr-line {
+  width: 25%;
+}
+
+.ten-list {
+  position: relative;
+}
+.ten {
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .img-lady {
+    width: 300px;
+    height: 80px;
+  }
+  .lower-list-item {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head-list:hover .lower-hover-list,
+  .head-list:hover .mega-container,
+  .head-list:hover .feature-dropdown {
+    display: none;
+  }
+  .head-list {
+    padding-block: 10px;
+  }
+  .span-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .faAngleDown {
+    display: none;
+  }
+  .lower-hover-list {
+    font-size: 14px;
+    position: absolute;
+    padding: 10px auto 10px 20px;
+    margin: 25px 0px 0px -120px;
+  }
+  .header-droplist p {
+    padding-block: 5px;
+  }
+  .menu-list {
+    position: absolute;
+    left: -75px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .img-lady {
+    width: 200px;
+    height: 55px;
+  }
+  .menu-list {
+    left: -60px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .upper-section {
+    padding-block: 15px;
+  }
+  .menu-list {
+    position: relative;
+    left: 0px;
+  }
+  .icons {
+    display: none;
+  }
+  .cart-link {
+    color: #7d7a7a;
+  }
+  .gear-list {
+    bottom: 0;
+    margin-top: 0px;
+    display: none;
+    opacity: 0;
+  }
+  .faGear:hover .gear-list,
+  .faBasket:hover .gear-list {
+    margin-top: 0px;
+    bottom: 30px;
+    display: block;
+    /* z-index: -15; */
+    opacity: 1;
+  }
+  .cart-link:hover {
+    color: #7d7a7a;
+  }
+}

@@ -1,0 +1,57 @@
+/* NAVLINKS COMPONENT */
+.link-name {
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.faPlus {
+  display: none;
+  cursor: pointer;
+}
+.mega-container {
+  font-size: 14px;
+  list-style-type: none;
+  background-color: white;
+  position: absolute;
+  width: 920px;
+  padding: 14px 10px;
+  z-index: -2;
+  margin: 35px 0px 0px;
+  left: -10%;
+  transform: translateX(-50%);
+  display: none;
+}
+.sub-link {
+  color: black;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.sub-list {
+  /* padding-block: 10px; */
+  min-width: 150px;
+  cursor: pointer;
+}
+.sub-list-span {
+  padding-block: 8px;
+  display: block;
+}
+.hr-line {
+  height: 2px;
+  width: 0;
+  opacity: 1;
+  background-color: red;
+  transition: all 0.7s ease;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .faPlus {
+    display: block;
+    /* padding: 7px 0px 0px; */
+    /* text-align: end; */
+  }
+  .sub-feature {
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+}

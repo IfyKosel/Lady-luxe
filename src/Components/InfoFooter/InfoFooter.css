@@ -1,0 +1,36 @@
+/* INFOFOOTER COMPONENT */
+.info-about {
+  color: rgb(155, 155, 156);
+  font-size: 14px;
+  line-height: 30px;
+}
+.info-icon {
+  cursor: pointer;
+}
+.info-icon:hover {
+  color: #deb887;
+}
+.info-account ul {
+  list-style-type: none;
+  padding: 0;
+}
+.acc-list:hover .acc-span {
+  border-bottom: 2px solid #deb887;
+}
+.acc-span {
+  border-bottom: 2px solid transparent;
+  transition: all 0.6s ease;
+  padding-block: 2px;
+  color: rgb(155, 155, 156);
+  font-size: 14px;
+}
+.contact-span {
+  line-height: 18px;
+  padding-block: 2px;
+  color: rgb(155, 155, 156);
+  font-size: 14px;
+  transition: all 0.7s ease;
+}
+.contact-span:hover {
+  color: rgb(155, 155, 156, 0.7);
+}

@@ -1,0 +1,87 @@
+.new-product-grid {
+  margin: 10px 0px 0px;
+  left: 0;
+}
+.product-grid {
+  padding-inline: 5%;
+}
+.image-grid {
+  position: relative;
+}
+.image-grid img {
+  height: 310px;
+  border: 1px solid #deb887;
+}
+.image-grid:hover .image-icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+.image-grid:hover .cart {
+  transition: 0.2s ease-in;
+}
+.image-grid:hover .wishlist {
+  transition: 0.38s ease-in;
+}
+.image-grid:hover .quickview {
+  transition: 0.56s ease-in;
+}
+.image-grid:hover .compare {
+  transition: 0.74s ease-in;
+}
+.top-tag {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  padding: 0px 7px;
+}
+.new-tag {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #deb887;
+  font-weight: 500;
+}
+.sale-tag {
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.image-icon-div {
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  text-align: end;
+  padding-inline: 7px;
+}
+.image-icon {
+  padding: 7px 0px;
+  transform: translateX(10px);
+  opacity: 0;
+  color: rgb(111, 111, 112);
+  cursor: pointer;
+}
+.image-icon:hover {
+  color: #deb887;
+}
+.image-name,
+.image-name:hover {
+  color: rgb(155, 155, 156);
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+}
+.image-price {
+  line-height: 15px;
+}
+.image-bold-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+.image-cancel-text {
+  text-decoration: line-through;
+  color: rgb(155, 155, 156);
+  font-size: 14px;
+}

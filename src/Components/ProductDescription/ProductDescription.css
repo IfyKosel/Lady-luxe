@@ -1,0 +1,38 @@
+.menu {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0px 15px 20px;
+  border-bottom: 2px solid transparent;
+  font-weight: 400;
+  background: transparent;
+  color: #212121;
+  cursor: pointer;
+  margin-bottom: -1px;
+}
+.activee {
+  color: #deb887;
+  border-bottom: 2px solid #deb887;
+}
+.render-content {
+  font-size: 14px;
+}
+.des-table {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 420px) {
+  .menu {
+    padding-inline: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu {
+    padding-block: 10px;
+  }
+}

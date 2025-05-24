@@ -1,0 +1,82 @@
+.empty-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-div img {
+  /* width: 200px; */
+}
+.empty-div h3 {
+  color: #777777;
+  margin: 0px;
+  padding: 16px 0px 4px;
+  font-size: 24px;
+}
+.empty-div p {
+  letter-spacing: 1px;
+}
+.table-item {
+  width: 100%;
+}
+.image-col {
+  width: 69px;
+  height: 90px;
+  margin: 8px 0px;
+}
+.product-col {
+  color: #777777;
+  text-transform: capitalize;
+}
+.price-col {
+  font-size: 24px;
+}
+.quantity-div {
+  font-size: 18px;
+  height: 40px;
+  width: 120px;
+  /* display: flex;
+  justify-content: center; */
+}
+.total-col,
+.total-sm {
+  color: #deb887;
+  font-size: 24px;
+}
+.down-buttons {
+  color: white;
+  font-weight: 500;
+  background-color: #deb887;
+  padding: 12px 25px;
+  border: 2px solid #deb887;
+}
+.down-buttons:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid #deb887;
+}
+
+@media screen and (max-width: 990px) {
+  .total-head,
+  .total-col {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-col,
+  .price-head,
+  .price-col,
+  .quantity-head,
+  .quantity-col,
+  .action-head,
+  .action-col {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .down-buttons {
+    padding: 6px 5px;
+  }
+}

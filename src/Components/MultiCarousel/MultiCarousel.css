@@ -1,0 +1,29 @@
+/* MULTI CAROUSEL COMPONENT */
+.card {
+  border-width: 0 !important;
+}
+.card .card-title {
+  color: #deb887;
+  font-size: 18px;
+  font-weight: 450;
+}
+.card-link {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.card-link:hover {
+  color: #deb887;
+}
+.card-hr {
+  width: 70px;
+  height: 2px;
+  background-color: #deb887;
+  opacity: 1;
+  border: none;
+  margin: auto auto 10px;
+}
+.card .card-subtitle {
+  font-weight: 400;
+}

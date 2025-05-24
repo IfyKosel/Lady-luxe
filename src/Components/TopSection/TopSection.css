@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.main_div {
+  background-color: rgb(245, 245, 245);
+}
+.first_div {
+  display: flex;
+  margin: auto;
+  padding: 15px 0px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(155, 155, 156);
+}
+.left-list,
+.right-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.left-list li,
+.right-list li {
+  letter-spacing: 0.5px;
+}
+.right-list li:hover {
+  cursor: pointer;
+}
+.faPhone {
+  padding-right: 7px;
+  color: #deb887;
+}
+.fa-right-list {
+  padding-inline: 5px;
+  transition: all 0.7s ease;
+}
+.right-list li:hover .fa-right-list {
+  color: #deb887;
+}
+.my-account {
+  position: relative;
+  margin-inline: 10px;
+  cursor: pointer;
+}
+.my-account li {
+  list-style-type: none;
+}
+.my-account:hover .first_div-table {
+  margin-top: 15px;
+  opacity: 1;
+  z-index: 5;
+}
+.first_div-table {
+  background-color: white;
+  padding: 15px 0px 15px 10px;
+  margin-top: 60px;
+  border-collapse: inherit;
+  transition: all 0.5s ease;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.first_div-table a,
+.first_div-table a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.bottom-div {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+  .left-list {
+    display: none;
+  }
+  .first_div {
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .main_div {
+    display: none;
+  }
+  .bottom-div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: #333333;
+    width: 100vw;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #7d7a7a;
+  }
+  .faBasket:hover .bottom-cart {
+    left: 100%;
+    transform: translateX(-50%);
+  }
+
+  .my-account:hover .first_div-table {
+    margin-top: 0px;
+    bottom: 30px;
+    display: block;
+  }
+  .first_div-table {
+    padding: 10px;
+    bottom: 0;
+    margin-top: 0px;
+    display: none;
+    width: 100px;
+  }
+}

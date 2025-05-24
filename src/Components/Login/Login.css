@@ -1,0 +1,42 @@
+/* LOGIN COMPONENT */
+.login-row {
+  padding-block: 70px;
+}
+.login-content {
+  border: 1px solid rgb(206, 206, 210);
+  padding: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.login-input {
+  height: 3.3em;
+}
+.login-btn {
+  color: white;
+  background-color: #deb887;
+  padding: 12px 25px;
+  border: 2px solid #deb887;
+  font-family: lato, sans-serif;
+}
+.login-btn:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid #deb887;
+}
+.create-box {
+  border: 1px solid rgb(206, 206, 210);
+  padding: 30px 28px 93px;
+  font-size: 14px;
+  font-family: lato, sans-serif;
+}
+.create-box h5 {
+  font-size: 14px;
+  font-family: lato, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+.create-box p {
+  line-height: 2rem;
+  font-size: 15px;
+  font-family: lato, sans-serif;
+}
