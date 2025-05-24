@@ -12,7 +12,7 @@ import BestSeller from "./Components/BestSeller/BestSeller";
 import Footer from "./Components/Footer/Footer";
 import ShopCategory from "./Components/ShopCategory";
 import Product from "./Components/Product";
-import Checkout from "./Components/CheckOut/CheckOut";
+import Checkout from "./Components/Checkout/Checkout";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
