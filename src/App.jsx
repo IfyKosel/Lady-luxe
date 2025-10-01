@@ -32,7 +32,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}>
             <Route path="/" element={<NewProduct />} />
-            {/* <Route path="/featuredproducts" element={<FeaturedProduct />} /> */}
             <Route
               path="/featuredproducts"
               element={<ShopCategory category="featuredproduct" />}

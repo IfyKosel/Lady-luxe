@@ -1,12 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import SectionHeader from "../SectionHeader";
 import "./GridProduct.css";
 
 function GridProduct() {
-  const [product, setProduct] = useState("newproduct");
+  const location = useLocation();
 
   const categoryLinks = [
     {
@@ -39,14 +38,10 @@ function GridProduct() {
                 <li key={index} className="product-lists">
                   <Link
                     to={item.link}
-                    onClick={() => {
-                      //from the useState to change the color of the product links when active
-                      setProduct(item.product);
-                    }}
                     className={
-                      product === item.product //an if statement with the useState: if product equals "new product"
-                        ? "product-links product-active" // then apply these classes
-                        : "product-links" // else apply only this class
+                      location.pathname === item.link
+                        ? "product-links product-active"
+                        : "product-links"
                     }
                   >
                     {item.productName}
